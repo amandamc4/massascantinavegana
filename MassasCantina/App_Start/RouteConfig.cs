@@ -13,9 +13,16 @@ namespace MassasCantina
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
+
+            //FOR ANGULAR2 ROUTES
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "{*anything}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
