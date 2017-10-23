@@ -9,6 +9,8 @@ namespace MassasCantina.Controllers
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }
+        public string Sabor { get; set; }
+
     }
 
     public class ProdutoBase : ProdutoAdd
@@ -21,5 +23,6 @@ namespace MassasCantina.Controllers
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
+        public string Sabor { get; set; }
     }
 }

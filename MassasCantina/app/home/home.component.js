@@ -14,7 +14,7 @@ var HomeComponent = (function () {
 }());
 HomeComponent = __decorate([
     core_1.Component({
-        template: " <img src=\"../Images/LogoTemp.jpg\" style=\"display: block; margin: 0 auto;\" />"
+        templateUrl: 'app/home/home.component.html'
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;

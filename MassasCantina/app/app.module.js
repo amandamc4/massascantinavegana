@@ -7,13 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
 var platform_browser_1 = require("@angular/platform-browser");
-var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
-var app_component_1 = require("./app.component");
 var app_routing_1 = require("./app.routing");
-var home_component_1 = require("./components/home.component");
+var forms_1 = require("@angular/forms");
+var common_1 = require("@angular/common");
+// Components
+var app_component_1 = require("./app.component");
+var home_component_1 = require("./home/home.component");
+var error_component_1 = require("./error/error.component");
+var error_service_1 = require("./error/error.service");
+var dobra_component_1 = require("./massas/dobra.component");
+var dobra_service_1 = require("./massas/dobra.service");
+var dobra_list_component_1 = require("./massas/dobra-list.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,9 +27,9 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
+        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, error_component_1.ErrorComponent, dobra_component_1.DobraComponent, dobra_list_component_1.DobraListComponent],
         imports: [platform_browser_1.BrowserModule, forms_1.ReactiveFormsModule, http_1.HttpModule, app_routing_1.routing],
-        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent],
-        providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }],
+        providers: [{ provide: common_1.APP_BASE_HREF, useValue: '/' }, error_service_1.ErrorService, dobra_service_1.DobraService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

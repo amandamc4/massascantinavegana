@@ -229,7 +229,6 @@
     <Compile Include="Controllers\Produto_vm.cs" />
     <Compile Include="Controllers\RecheiosController.cs" />
     <Compile Include="Controllers\Recheio_vm.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -245,6 +244,10 @@
     <Compile Include="Migrations\201708141743380_NewClasses.Designer.cs">
       <DependentUpon>201708141743380_NewClasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710102346379_ProdutoDBUpdate.cs" />
+    <Compile Include="Migrations\201710102346379_ProdutoDBUpdate.Designer.cs">
+      <DependentUpon>201710102346379_ProdutoDBUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -258,14 +261,17 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\error\error.component.html" />
+    <Content Include="app\home\home.component.html" />
+    <Content Include="app\massas\dobra.component.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\LogoTemp.jpg" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
@@ -286,7 +292,18 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="package.json" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -297,6 +314,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="stylesheets\styles.css" />
     <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -319,10 +337,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -337,13 +351,24 @@
     <EmbeddedResource Include="Migrations\201708141743380_NewClasses.resx">
       <DependentUpon>201708141743380_NewClasses.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710102346379_ProdutoDBUpdate.resx">
+      <DependentUpon>201710102346379_ProdutoDBUpdate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
-    <TypeScriptCompile Include="app\Components\home.component.ts" />
+    <TypeScriptCompile Include="app\error\error.component.ts" />
+    <TypeScriptCompile Include="app\error\error.model.ts" />
+    <TypeScriptCompile Include="app\error\error.service.ts" />
+    <TypeScriptCompile Include="app\home\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\massas\dobra-list.component.ts" />
+    <TypeScriptCompile Include="app\massas\dobra.component.ts" />
+    <TypeScriptCompile Include="app\massas\dobra.model.ts" />
+    <TypeScriptCompile Include="app\massas\dobra.service.ts" />
+    <TypeScriptCompile Include="app\massas\massa.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

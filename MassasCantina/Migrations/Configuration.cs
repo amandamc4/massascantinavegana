@@ -55,7 +55,7 @@ namespace MassasCantina.Migrations
 
             context.Produtos.AddOrUpdate(
                 p => p.Nome,
-                new Produto { Nome = "Hamburguer", Descricao = "Hamburguer vegano" }
+                new Produto { Nome = "Hamburguer", Descricao = "Hamburguer vegano", Sabor = "Grao de bico" }
            );
         }
     }
