@@ -2,11 +2,12 @@
 @Component({
     selector: "user-app",
     template: `
-               <div>  
-              <div class='container'>
+              <div id="container">
+              <div class="header">
+                <app-header></app-header>
+               </div>
                 <router-outlet></router-outlet>
-              </div>
-             </div>          
+              </div>    
 `
 })
 

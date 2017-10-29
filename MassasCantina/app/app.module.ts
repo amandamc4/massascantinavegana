@@ -8,6 +8,7 @@ import { APP_BASE_HREF } from '@angular/common';
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header.component';
 import { ErrorComponent } from './error/error.component'
 import { ErrorService } from './error/error.service';
 import { DobraComponent } from './massas/dobra.component';
@@ -16,7 +17,7 @@ import { DobraListComponent } from './massas/dobra-list.component';
 
 
 @NgModule({
-    declarations: [AppComponent, HomeComponent, ErrorComponent, DobraComponent, DobraListComponent],
+    declarations: [AppComponent, HomeComponent, HeaderComponent, ErrorComponent, DobraComponent, DobraListComponent],
     imports: [BrowserModule, ReactiveFormsModule, HttpModule, routing],  
     providers: [{ provide: APP_BASE_HREF, useValue: '/' }, ErrorService, DobraService],
     bootstrap: [AppComponent]

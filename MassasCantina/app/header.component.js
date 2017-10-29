@@ -7,16 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var HeaderComponent = (function () {
+    function HeaderComponent() {
     }
-    return AppComponent;
+    return HeaderComponent;
 }());
-AppComponent = __decorate([
+HeaderComponent = __decorate([
     core_1.Component({
-        selector: "user-app",
-        template: "\n              <div id=\"container\">\n              <div class=\"header\">\n                <app-header></app-header>\n               </div>\n                <router-outlet></router-outlet>\n              </div>    \n"
+        selector: 'app-header',
+        template: "\n    <header class=\"row\">\n        <nav class=\"col-md-8 col-md-offset-2\">\n            <ul class=\"nav nav-pills\">\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/messages']\">Messenger</a></li>\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/auth']\">Authentication</a></li>\n            </ul>\n        </nav>\n    </header>\n    "
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], HeaderComponent);
+exports.HeaderComponent = HeaderComponent;
+//# sourceMappingURL=header.component.js.map

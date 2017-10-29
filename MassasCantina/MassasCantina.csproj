@@ -271,6 +271,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\header_bg_bw.png" />
+    <Content Include="Images\header_bg_red.png" />
     <Content Include="Images\LogoTemp.jpg" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
@@ -311,10 +313,9 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="stylesheets\styles.css" />
     <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -362,6 +363,7 @@
     <TypeScriptCompile Include="app\error\error.component.ts" />
     <TypeScriptCompile Include="app\error\error.model.ts" />
     <TypeScriptCompile Include="app\error\error.service.ts" />
+    <TypeScriptCompile Include="app\header.component.ts" />
     <TypeScriptCompile Include="app\home\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\massas\dobra-list.component.ts" />
