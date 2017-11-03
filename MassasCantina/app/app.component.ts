@@ -3,7 +3,7 @@
     selector: "user-app",
     template: `
               <div id="container">
-              <div class="header">
+              <div>
                 <app-header></app-header>
                </div>
                 <router-outlet></router-outlet>

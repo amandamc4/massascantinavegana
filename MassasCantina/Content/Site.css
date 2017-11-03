@@ -32,3 +32,23 @@ body {
     border: 0px;
     padding: 0px;
 }
+
+.headerLogo {
+    position: relative;
+    top: 0px;
+    width: 40%;
+    height: auto;
+    left: 15%;
+    padding: 10px;
+    float: left;
+}
+
+.headerMenu {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    margin: 0px;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    display: inline;
+}

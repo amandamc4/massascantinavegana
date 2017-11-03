@@ -15,7 +15,7 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     core_1.Component({
         selector: 'app-header',
-        template: "\n    <header class=\"row\">\n        <nav class=\"col-md-8 col-md-offset-2\">\n            <ul class=\"nav nav-pills\">\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/messages']\">Messenger</a></li>\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/auth']\">Authentication</a></li>\n            </ul>\n        </nav>\n    </header>\n    "
+        template: "\n    <header>\n      <div class=\"header\">\n        <div class=\"headerLogo\">\n            <img src=\"../../Images/MassasCantinaLogo.png\">\n        </div>\n        <div class=\"headerMenu\">\n            <ul class=\"nav nav-pills\">\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/home']\">Home</a></li>\n                <li routerLinkActive=\"active\" class=\"dropdown\"><a [routerLink]=\"['#']\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Produtos\n                    <span class=\"caret\"></span></a>\n                    <ul class=\"dropdown-menu\">\n                      <li routerLinkActive=\"active\"><a [routerLink]=\"['/massa']\">Massas</a></li>\n                      <li><a href=\"#\">Submenu 1-2</a></li>\n                      <li><a href=\"#\">Submenu 1-3</a></li> \n                    </ul>\n                </li>\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/auth']\">Contato</a></li>\n                <li routerLinkActive=\"active\"><a [routerLink]=\"['/auth']\">Sobre</a></li>\n            </ul>\n        </div>\n    </div>\n    </header>\n    "
     })
 ], HeaderComponent);
 exports.HeaderComponent = HeaderComponent;
